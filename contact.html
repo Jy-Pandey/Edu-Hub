@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      :root {
+        --main-color: #0062ff;
+        --supporting-color: #ebf3fe;
+        --font-color: #424242;
+        /* --bg-color: #ffffff; */
+        --bg-color: #f7fcff;
+        --heading-color: #000a19;
+        --hero-heading-color: #003b99;
+        --white-color: #ffffff;
+        --para-color: #504e4d;
+        --bnt-hover-bg-color: #003b99;
+        --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        --footer-bg-color: #040d12;
+      }
+      .contact-sec {
+        /* background-color: var(--bg-color); */
+        & .grid {
+          gap: 8rem;
+        }
+      }
+      label,
+      input {
+        display: block;
+      }
+      input,
+      textarea {
+        padding: 1.2rem;
+        font-size: 1.5rem;
+        border-radius: 0.3rem;
+        margin: 0.2rem 0 3rem 0;
+        border: none;
+        border: 1px solid rgb(35, 34, 34);
+        width: 100%;
+      }
+
+      textarea {
+        width: 100%;
+        height: 20rem;
+      }
+
+      /* textarea::placeholder{
+        font-size: 1.6rem;
+        padding-left: 0.8rem;
+      } */
+
+      .btn {
+        display: inline-block;
+        background-color: var(--main-color);
+        color: var(--bg-color);
+        margin: 2.4rem 0 4.8rem 0;
+        padding: 1.2rem 2.4rem;
+        border-radius: 0.5rem;
+        border: none;
+        font-size: 1.5rem;
+      }
+      footer {
+        padding-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="section-navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="My logo" width="80%" />
+          </a>
+        </div>
+        <nav class="nav-section">
+          <ul class="links">
+            <li>
+              <a href="index.html" target="_blank">home</a>
+            </li>
+            <li>
+              <a href="about.html" target="_blank">about</a>
+            </li>
+            <li>
+              <a href="services.html" target="_blank">services</a>
+            </li>
+            <li>
+              <a href="blog.html" target="_blank">blog</a>
+            </li>
+            <li>
+              <a href="contact.html" target="_blank">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- contact page Section -->
+    <div class="contact-sec">
+      <div class="container">
+        <h2 class="section-common--subheading">Contact Us</h2>
+        <p class="section-common--heading">
+          Get in touch with us. We are always here to help you.
+        </p>
+      </div>
+
+      <div class="container grid grid-two--cols x">
+        <form action="https://formspree.io/f/xzzpoayk" method="POST">
+          <div class="name-email grid grid-two--cols">
+            <div>
+              <label for="username">Username</label>
+              <input
+                type="text"
+                name="username"
+                placeholder="enter your username"
+              />
+            </div>
+            <div>
+              <label for="email">Enter your email</label>
+              <input type="email" name="username" placeholder="abc@gmail.com" />
+            </div>
+          </div>
+          <label for="subject">Subject</label>
+          <input type="text" name = "Subject" placeholder="your main title" />
+
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="enetr your message"
+          ></textarea>
+
+          <div >
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+          </div>
+        </form>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116078.31354746528!2d73.6224703959411!3d24.608263766801173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e56550a14411%3A0xdbd8c28455b868b0!2sUdaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1724895255315!5m2!1sen!2sin"
+            style="border: 0"
+            height="90%"
+            width="100%"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===========Footer Start===============-->
+    <footer>
+      <div class="container grid grid-four--cols">
+        <div class="footer-div--1">
+          <h2 class="footer-subheading">Thapa EduHub</h2>
+          <p>Let's revolutionize the way you study with Thapa EduHub</p>
+          <div class="footer-icons">
+            <a
+              href="https://www.linkedin.com/in/jyoti-pandey-68b0a3267/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://github.com/Jy-Pandey" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-div--2">
+          <p class="footer-links--title">Courses</p>
+          <ul>
+            <li>Css</li>
+            <li>Css</li>
+            <li>Css</li>
+            <li>Css</li>
+            <li>Css</li>
+            <li>Css</li>
+          </ul>
+        </div>
+        <div class="footer-div--3">
+          <p class="footer-links--title">Links</p>
+          <ul>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+          </ul>
+        </div>
+        <div class="footer-div--4">
+          <p class="footer-links--title">Blogs</p>
+          <ul>
+            <li>Home</li>
+            <li>HTML</li>
+            <li>HTML</li>
+            <li>HTML</li>
+            <li>HTML</li>
+            <li>HTML</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- ===========Footer End===============-->
+  </body>
+</html>

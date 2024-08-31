@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      :root {
+        --main-color: #0062ff;
+        --supporting-color: #ebf3fe;
+        --font-color: #424242;
+        /* --bg-color: #ffffff; */
+        --bg-color: #f7fcff;
+        --heading-color: #000a19;
+        --hero-heading-color: #003b99;
+        --white-color: #ffffff;
+        --para-color: #504e4d;
+        --bnt-hover-bg-color: #003b99;
+        --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        --footer-bg-color: #040d12;
+      }
+      .blog-sec {
+        background-color: var(--bg-color);
+        & .grid {
+          gap: 6rem;
+        }
+      }
+      .blog-content {
+        padding: 3rem;
+      }
+      .blog {
+        box-shadow: var(--btn-box-shadow);
+        transition: scale 0.3s linear;
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+
+        &:hover {
+          scale: 1.1;
+        }
+      }
+      .date {
+        display: flex;
+        justify-content: space-between;
+
+        .fa-solid {
+          padding: 0;
+          background-color: transparent;
+          color: var(--main-color);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="section-navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="My logo" width="80%" />
+          </a>
+        </div>
+        <nav class="nav-section">
+            <ul class="links">
+              <li>
+                <a href="index.html" target="_blank">home</a>
+              </li>
+              <li>
+                <a href="about.html" target="_blank">about</a>
+              </li>
+              <li>
+                <a href="services.html" target="_blank">services</a>
+              </li>
+              <li>
+                <a href="blog.html" target="_blank">blog</a>
+              </li>
+              <li>
+                <a href="contact.html" target="_blank">contact</a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+
+    <!-- Blog Section -->
+    <section class="blog-sec">
+      <div class="container">
+        <h2 class="section-common--subheading">Explore Our Courses</h2>
+        <p class="section-common--heading">
+          Discover a variety of courses across different categories.
+        </p>
+      </div>
+
+      <div class="container grid grid-four--cols">
+        <div class="blog">
+          <figure>
+            <img src="images/pexels-photo-1181373.jpeg" alt="" />
+          </figure>
+          <div class="blog-content">
+            <div class="date">
+              <p><i class="fa-calendar fa-solid"></i> Sept 22 2023</p>
+              <p><i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+            <h3 class="section-common--title">
+              Code your first react app with us
+            </h3>
+          </div>
+        </div>
+        <div class="blog">
+          <figure>
+            <img src="images/blog4.webp" alt="" />
+          </figure>
+          <div class="blog-content">
+            <div class="date">
+              <p><i class="fa-calendar fa-solid"></i> Sept 22 2023</p>
+              <p><i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+            <h3 class="section-common--title">
+              Code your first react app with us
+            </h3>
+          </div>
+        </div>
+        <div class="blog">
+          <figure>
+            <img src="images/blog2.webp" alt="" />
+          </figure>
+          <div class="blog-content">
+            <div class="date">
+              <p><i class="fa-calendar fa-solid"></i> Sept 22 2023</p>
+              <p><i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+            <h3 class="section-common--title">
+              Code your first react app with us
+            </h3>
+          </div>
+        </div>
+        <div class="blog">
+          <figure>
+            <img src="images/blog3.webp" alt="" />
+          </figure>
+          <div class="blog-content">
+            <div class="date">
+              <p><i class="fa-calendar fa-solid"></i> Sept 22 2023</p>
+              <p><i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+            <h3 class="section-common--title">
+              Code your first react app with us
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========Section contact Start ============-->
+    <div class="contact-page-sec">
+      <div class="container grid grid-two--cols">
+        <div class="contact-page-text">
+          <h2 class="contact-title">Let's revolutionize the way you study</h2>
+          <p>Join our free bootcamps to know us better</p>
+          <div class="btn">
+            <a href="contact.html">
+              start now <i class="fa-solid fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-image">
+          <img src="images/main.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- ========Section contact End ============-->
+
+    <!-- ===========Footer Start===============-->
+    <footer>
+      <div class="container grid grid-four--cols">
+        <div class="footer-div--1">
+          <h2 class="footer-subheading">Thapa EduHub</h2>
+          <p>Let's revolutionize the way you study with Thapa EduHub</p>
+          <div class="footer-icons">
+            <a
+              href="https://www.linkedin.com/in/jyoti-pandey-68b0a3267/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://github.com/Jy-Pandey" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-div--2">
+          <p class="footer-links--title">Courses</p>
+          <ul>
+            <li>Css</li>
+            <li>Css</li>
+            <li>Css</li>
+            <li>Css</li>
+            <li>Css</li>
+            <li>Css</li>
+          </ul>
+        </div>
+        <div class="footer-div--3">
+          <p class="footer-links--title">Links</p>
+          <ul>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+          </ul>
+        </div>
+        <div class="footer-div--4">
+          <p class="footer-links--title">Blogs</p>
+          <ul>
+            <li>Home</li>
+            <li>HTML</li>
+            <li>HTML</li>
+            <li>HTML</li>
+            <li>HTML</li>
+            <li>HTML</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- ===========Footer End===============-->
+  </body>
+</html>
