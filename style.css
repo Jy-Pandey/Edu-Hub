@@ -654,7 +654,7 @@ footer .footer-links--title{
         }
         .grid{
             gap: 1.5rem;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         }
         .footer-div--1{
             margin-top: 6.4rem;
